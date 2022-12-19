@@ -4,15 +4,24 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>简单DP+最长上升子序列 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="简单DP+最长上升子序列比较简单的DP1027. 方格取数设有 N×N 的方格图，我们在其中的某些方格中填入正整数，而其它的方格中则放入数字0。如下图所示： ​ 某人从图中的左上角 A 出发，可以向下行走，也可以向右行走，直到到达右下角的 B 点。 在走过的路上，他可以取走方格中的数（取走后的方格中将变为数字0）。 此人从 A 点到 B 点共走了两次，试找出两条这样的路径，使得取得的数字和为最大。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单DP+最长上升子序列">
+<meta property="og:url" content="http://example.com/2022/12/19/%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="简单DP+最长上升子序列比较简单的DP1027. 方格取数设有 N×N 的方格图，我们在其中的某些方格中填入正整数，而其它的方格中则放入数字0。如下图所示： ​ 某人从图中的左上角 A 出发，可以向下行走，也可以向右行走，直到到达右下角的 B 点。 在走过的路上，他可以取走方格中的数（取走后的方格中将变为数字0）。 此人从 A 点到 B 点共走了两次，试找出两条这样的路径，使得取得的数字和为最大。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.acwing.com/media/article/image/2019/09/12/19_764ece6ed5-2.gif">
+<meta property="og:image" content="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221218114058834-1319685077.png">
+<meta property="og:image" content="http://example.com/images/pasted-1.png">
+<meta property="article:published_time" content="2022-12-19T08:17:00.000Z">
+<meta property="article:modified_time" content="2022-12-19T08:23:52.000Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="动态规划">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.acwing.com/media/article/image/2019/09/12/19_764ece6ed5-2.gif">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +78,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-升子序列" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-升子序列" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/19/%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" class="article-date">
   <time class="dt-published" datetime="2022-12-19T08:17:00.000Z" itemprop="datePublished">2022-12-19</time>
@@ -88,8 +95,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/19/%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/">简单DP+最长上升子序列</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      简单DP+最长上升子序列
     </h1>
   
 
@@ -310,365 +317,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/17/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%96%B0%E5%AE%9E%E8%B7%B5%E5%9F%BA%E5%9C%B02022%E5%B9%B4%E5%86%AC%E5%AD%A3%E6%A0%A1%E8%B5%9B%EF%BC%88NPU-ACM-Winter-Contest/" class="article-date">
-  <time class="dt-published" datetime="2022-12-17T03:24:00.000Z" itemprop="datePublished">2022-12-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/17/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%96%B0%E5%AE%9E%E8%B7%B5%E5%9F%BA%E5%9C%B02022%E5%B9%B4%E5%86%AC%E5%AD%A3%E6%A0%A1%E8%B5%9B%EF%BC%88NPU-ACM-Winter-Contest/">大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest</a>
-    </h1>
+    <a href="/2022/12/17/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%96%B0%E5%AE%9E%E8%B7%B5%E5%9F%BA%E5%9C%B02022%E5%B9%B4%E5%86%AC%E5%AD%A3%E6%A0%A1%E8%B5%9B%EF%BC%88NPU-ACM-Winter-Contest/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest）"><a href="#大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest）" class="headerlink" title="大学生程序设计创新实践基地2022年冬季校赛（NPU ACM Winter Contest）"></a>大学生程序设计创新实践基地2022年冬季校赛（NPU ACM Winter Contest）</h1><h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>总体考察对于板子的熟练变换，以及考察离谱地使用python和对getchar()以及EOF的基础掌握程度。</p>
-<p>B，D，E是防AK题目。</p>
-<h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><h2 id="A死锁"><a href="#A死锁" class="headerlink" title="A死锁"></a>A死锁</h2><p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211220958870-383557195.png" alt="image"></p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211220959473-808330499.png" alt="image">​</p>
-<p>input</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">6</span> <span class="number">5</span> <span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">4</span> <span class="number">6</span> <span class="number">5</span></span><br><span class="line"><span class="number">9</span> <span class="number">9</span> <span class="number">9</span></span><br><span class="line"><span class="number">3</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">6</span> <span class="number">5</span> <span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">4</span> <span class="number">6</span> <span class="number">5</span></span><br><span class="line"><span class="number">9</span> <span class="number">9</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
-
-<p>output</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Dead Lock!</span><br><span class="line">Yes!</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>这是一个带模拟。</p>
-<p>按照策略，如果一个程序使用目前的资源可以结束，那么就可以结束这一个进程，同时回收。如果对于所有的剩下的进程无法提供资源，那么就是死锁。</p>
-<blockquote>
-<p>注意：是有多重输入，所以应该使用while(cin &gt;&gt; )形式</p>
-</blockquote>
-<h2 id="C-教科书般的亵渎"><a href="#C-教科书般的亵渎" class="headerlink" title="C 教科书般的亵渎"></a>C 教科书般的亵渎</h2><h3 id="Problem-Description"><a href="#Problem-Description" class="headerlink" title="Problem Description"></a>Problem Description</h3><p>《炉石传说：魔兽英雄传》是一款由暴雪娱乐公司出品的策略类卡牌游戏，中国大陆地区的独家运营由网易公司代理。2014年3月13日全球同步正式运营，“酒馆战棋”模式于北京时间2019年11月6日凌晨2点国服开启抢先体验。</p>
-<p>游戏背景设定于暴雪的魔兽系列，共十位魔兽中的角色作为十种不同的职业。而玩家要做的，就是根据己方现有的卡牌组建合适的卡组，指挥英雄，驱动随从，施展法术，与游戏好友或素不相识的对手一决高下。</p>
-<p>在炉石传说游戏中，你需要控制随从来为你赢得战斗。有时，你需要及时处理对手的随从。你当然可以使用你的随从来攻击对手的；但是，当对手的场面过于庞大时，你可能需要法术来帮助解场。亵渎就是一张优质的解场法术，它上限极高，但需要一定的（有时极为复杂的）计算。本题的背景就是在你不控制任何随从的时候，<br>使用亵渎解场（消灭所有随从）。</p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221000018-674018153.png" alt="image">​</p>
-<p>为简化题意，我们假设：一张亵渎能对所有随从造成 1 点伤害，如果有随从死</p>
-<p>亡，则再次施放亵渎；一个随从有生命值（一个整数），当生命值小于等于 0 时该随</p>
-<p>从立即死亡；我们只使用亵渎解场，并且不考虑所有其他因素。</p>
-<p>在2018年1月11日的逗鱼时刻中，异灵术老师在手牌中有扭曲虚空的情况下，仍</p>
-<p>尝试使用亵渎解对面DK铺的一波场面：</p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221000712-19280262.png" alt="image">​</p>
-<p>经过不懈努力，最终异灵术仍没能在回合结束前算出解法。作为他的粉丝，小A决</p>
-<p>定让你写个程序帮帮异灵术老师算数。</p>
-<p>在此题中，每个随从依次入场，初始状态下场上无随从。每有一个随从入场，你都必须立刻算出：至少需要打出多少张亵渎，才能消灭场上已有的所有随从？ </p>
-<p><strong>Input Format</strong></p>
-<p>输入共两行。</p>
-<p>第一行，有且仅有一个正整数 N，表示战场上的随从数量。</p>
-<p> 第二行有 N 个正整数，第 i 个正整数 a*<del>i</del>* 表示第 i 个入场随从的初始生命值，相</p>
-<p>邻两个正整数之间用一个空格隔开。</p>
-<p><strong>Output Format</strong></p>
-<p>一行，N个正整数，第 i 个数表示消灭第 1,2, …, i 个随从需要打出的亵渎张数</p>
-<p>的最小值。相邻两个正整数之间用一个空格隔开。</p>
-<p><strong>Hint</strong></p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221001260-1629260624.png" alt="image">​</p>
-<p>样例解释：</p>
-<p>第 1 个随从入场，消灭第 1 个随从需要打出 1 张亵渎；</p>
-<p>第 2 个随从入场，消灭第 1, 2 个随从需要打出<br>2 张亵渎；</p>
-<p>第 3 个随从入场，消灭第 1, 2, 3 个随从需要打出 1 张亵渎。</p>
-<p>输入</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>输出</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><blockquote>
-<p>其实是一道水题</p>
-</blockquote>
-<p>当有一大波随从进来以后，我们要消灭所有的随从，就相当于考虑消灭生命值最大的随从</p>
-<p>（充分必要，最大的消灭了，那么所有的随从消灭了，并且仅仅最大的随从消灭了，那么所有的随从才能算是被消灭）</p>
-<p>如果同一个生命值有许多的随从，其实相当于是只有一个随从（生命值同时降为0，仅仅引发一次亵渎）</p>
-<p>现在想：如果仅仅有一个随从，那么就需要他的血量这么多的伤害。</p>
-<p>如果小于最大的随从有m个（去重之后），那么仅仅需要$n - m$随从就可以了。</p>
-<p><strong>我们动态地进行考虑</strong></p>
-<p>当前消灭已经出现的随从要ans次亵渎</p>
-<p>设当前的最大血量为maxv(初始值为-1)</p>
-<ol>
-<li>添加的一个随从的血量已经出现，那么输出ans并且continue</li>
-<li>添加的一个随从的血量不是最大，那么ans–</li>
-<li>添加的一个随从的血量（用z表示）比maxv还要大，那么<code>ans += z - maxv - 1</code></li>
-</ol>
-<p>这样就可以了</p>
-<h2 id="F-理论力学"><a href="#F-理论力学" class="headerlink" title="F 理论力学"></a>F 理论力学</h2><p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221001746-125316341.png" alt="image">​</p>
-<p>提示：</p>
-<p>Σn ≤ 200000 且所有输入均在C 语言long 范围内</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span> <span class="number">1</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">No</span><br></pre></td></tr></table></figure>
-
-<p>输入2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">-2</span> <span class="number">-2</span> <span class="number">-1</span> <span class="number">-1</span></span><br></pre></td></tr></table></figure>
-
-<p>输出2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Yes</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>典型推式子然后C程序考试题。</p>
-<p>需要使得</p>
-<p>$$<br>\sum F_x &#x3D; 0\<br>\sum F_y &#x3D; 0\<br>\sum xF_y - yF_x &#x3D; 0\<br>$$</p>
-<p>然后就可以了。</p>
-<h2 id="G-保险柜"><a href="#G-保险柜" class="headerlink" title="G 保险柜"></a>G 保险柜</h2><p>小A有一个神奇的保险柜，需要输入正确的密码（一个正整数）后才能打开。神奇的是，这个保险柜的密码不唯一，也就是说存在多种合法的密码；一个密码合法， 当且仅当这个数能被 11 整除。</p>
-<p>小A为了防止舍友小B窃密， 每次都会输入一个很大的密码。现在小A想问你：</p>
-<p>他输入的这个数是不是一个合法密码？</p>
-<p>Input Format</p>
-<p>一行，一个正整数 S，表示密码。</p>
-<p>Output Format</p>
-<p>一行，一个字符串。如果密码合法，则输出“Yes”；否则输出“No”。大小写敏</p>
-<p>感。</p>
-<p>Hint</p>
-<p>对于所有数据，有<br>0 <em>≤</em> lg S <em>≤</em> 2 <em>×</em> 10 ^5^ 。</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">11</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Yes</span><br></pre></td></tr></table></figure>
-
-<p>输入2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">12</span></span><br></pre></td></tr></table></figure>
-
-<p>输出2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">No</span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>这一道题目对于python就是水题。</p>
-<p>一句话：使用python写，自带高精度，堪比上课练习题</p>
-<h2 id="H-区间-amp-amp-查询"><a href="#H-区间-amp-amp-查询" class="headerlink" title="H 区间&amp;&amp;查询"></a>H 区间&amp;&amp;查询</h2><p>ProblemDescription</p>
-<p>给定 N 个区间 [l, r] (都是闭区间），对于每个区间，求出其余 N <em>−</em> 1个区间有多少个区间和该区间有交集（[2, 5] 和[5, 7] 也视为有交集）。</p>
-<p>Input Format</p>
-<p>第一行输入一个正整数 N(2 <em>≤</em> N <em>≤</em> 10 ^5^ ) 接下来的 N 行每行两个正整数 L <em><del>i</del></em> , R*<del>i</del>* (1 <em>≤</em> L*<del>i</del>* <em>≤</em> R*<del>i</del>* <em>≤</em> 10 ^9^ )代表一个区间。</p>
-<p>Output Format</p>
-<p>输出 N 行,第 i 行代表其余N <em>−</em> 1 个区间有多少个区间和第i 个区间有交集。</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">5</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">5</span> <span class="number">6</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>一开始想了许久，然后发现也很水。</p>
-<p>所覆盖的区间数就是$总数 - 1 - 当前区间左端点左边的其他区间右端点个数 -  当前区间右端点右边的其他区间左端点个数$a（正着考虑难，那么就反着考虑，总数减去不覆盖的）</p>
-<p>我们先把所有的区间的左端点，右端点存入两个数组<code>l</code>,<code>r</code></p>
-<p>然后进行排序。</p>
-<p>使用二分法来求出分界点坐标，然后求出当前区间左端点左边的其他区间右端点个数 以及 当前区间右端点右边的其他区间左端点个数</p>
-<h2 id="I-众里寻ta千百度"><a href="#I-众里寻ta千百度" class="headerlink" title="I 众里寻ta千百度"></a>I 众里寻ta千百度</h2><p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221002298-682347117.png" alt="image">​</p>
-<p>Hint</p>
-<p>隧道最多只能走一次,当然也可以不走。</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">5</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure>
-
-<p>首先：使用SPFA，因为更新过程中变数比较多，迭代来的更稳一些</p>
-<p>然后我们使用<code>d[][0/1]</code>来存储每一个点到起点的距离。</p>
-<p>如果是<code>d[][0]</code>，那么表示存起点到这里，没有经过隧道。</p>
-<p>如果是<code>d[][1]</code>，那么表示存起点到这里，已经经过隧道。</p>
-<p>对于当前点$x$，</p>
-<ol>
-<li>遇到公路，那么使用<code>d[x][0]</code>更新<code>d[y][0]</code>,使用<code>d[x][1]</code>更新<code>d[y][1]</code></li>
-<li>遇到隧道，那么使用<code>d[x][0]</code>更新<code>d[y][1]</code></li>
-</ol>
-<h2 id="J-强制在线"><a href="#J-强制在线" class="headerlink" title="J 强制在线"></a>J 强制在线</h2><p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221002840-1281399222.png" alt="image">​</p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221003247-1999813013.png" alt="image">​</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
-
-<p>这一道题目可以使用</p>
-<ol>
-<li>复杂度直接爆炸的递归形式</li>
-<li>线性的递推形式</li>
-<li>使用矩阵快速幂可以过本题</li>
-</ol>
-<p>这里使用矩阵快速幂。</p>
-<h2 id="K-买装备"><a href="#K-买装备" class="headerlink" title="K 买装备"></a>K 买装备</h2><p>Problem Description</p>
-<p>A和B最近迷上了英雄联盟这款游戏，但A和B都是手残，每一次在游戏中都会拖队友的后腿。为了不影响其他队友的游戏体验，他们只能选择熔岩巨兽墨菲特和北地之怒瑟庄妮这些操作难度较低的英雄，即使手法上有所欠缺，但只要大到人就算有作用。但这样的英雄往往很难吃到经济，没有金币来购买装备。而队内的输出大哥，人头拿的多，野怪刷的快，往往很快就满装备了（一个英雄最多可以出 6 件装备），还剩出许多金币花不出去。于是A和B就在想，如果英雄可以买无限多的装备的话，输出大哥的战斗力会有多高呢？</p>
-<p>在英雄联盟中有神话装备，传说装备，史诗装备和普通装备。每一个英雄只能买一件神话装备（在神话装备中选一件，也可以不买神话装备），而其他种类的装备可以同时购买，但是同样的一件装备只能买一个。</p>
-<pre><code> 为了方便起见我们将一件装备 i 用 a *~i~* , b *~i~* , c*~i~*来表述。当 a*~i~* = 1 时，表示 i 为神话装备，a*~i~* = 0 时，表示 i 为其他种类的装备。 b*~i~*为购买装备 i 需要的金币，c*~i~*为装备 i 可以提供的战斗力。英雄的战斗力之和为他所拥有的装备的战斗力之和。
-</code></pre>
-<p>A现在拥有 M 个金币，问他最多可以拥有多少的战斗力。</p>
-<p>Input Format</p>
-<p>第一行输入两个整数 M, N。表示A拥有的金币数量 M 和商店老板提供的装备</p>
-<p>数量 N；</p>
-<p>接下来的 N 行，每行三个正整数 a <em><del>i</del></em> , b <em><del>i</del></em> , c <em><del>i</del></em> 。意义如题面所示。</p>
-<p>Output Format</p>
-<p>输出最多可以拥有的战斗力。</p>
-<p><img src="https://img2023.cnblogs.com/blog/2609004/202212/2609004-20221211221003600-939565362.png" alt="image">​</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">100</span> <span class="number">5</span> </span><br><span class="line"><span class="number">1</span> <span class="number">20</span> <span class="number">20</span></span><br><span class="line"><span class="number">1</span> <span class="number">30</span> <span class="number">30</span></span><br><span class="line"><span class="number">0</span> <span class="number">20</span> <span class="number">100</span></span><br><span class="line"><span class="number">0</span> <span class="number">80</span> <span class="number">200</span></span><br><span class="line"><span class="number">0</span> <span class="number">50</span> <span class="number">110</span></span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">300</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-5"><a href="#思路-5" class="headerlink" title="思路"></a>思路</h3><p>这里就需要掌握到背包问题的精髓。</p>
-<p>首先，我们把所有的非神化装备DP完，然后考虑神话装备。</p>
-<ol>
-<li>不选神话装备，那么答案就是<code>dp[m]</code></li>
-<li>如果要选择神话装备，首先看能不能买起，然后能力值就是<code>dp[m-价钱] + 价值</code></li>
-</ol>
-<p>DP 的精髓赏析：</p>
-<ul>
-<li>对于最后一件物品，DP一下就可以了，不需要对所有的m进行D</li>
-<li>关于只能选择一种的类型，我放在最后，在把01背包的问题考虑完成以后再进行考虑。</li>
-</ul>
-<h2 id="L-寄你太美"><a href="#L-寄你太美" class="headerlink" title="L 寄你太美"></a>L 寄你太美</h2><p>Problem Description</p>
-<p>小黑子A是个不折不扣的iKun，他发现很多字符串中都会出现cxk和ji的字样，他</p>
-<p>想让你统计在一段文本中cxk和ji各出现了几次</p>
-<p>由于小黑子A对cxk爱的深沉，他对你提出两个额外要求：</p>
-<ol>
-<li>在两个字符间出现空格或换行符，不影响字符串匹配，但中间不能出现其他</li>
-</ol>
-<p>字符，详见样例 1</p>
-<ol start="2">
-<li>大小写随意，详见样例 2</li>
-</ol>
-<p>Input Format</p>
-<p>若干行，包含空格、换行符和大小写字母，文件大小不超过<br>5 MB</p>
-<p>Output Format</p>
-<p>两个整数，分别代表cxk和ji出现的次数</p>
-<p>输入1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">c x</span><br><span class="line">k w</span><br><span class="line">o j</span><br><span class="line">i g e</span><br></pre></td></tr></table></figure>
-
-<p>输出1</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<p>输入2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jINiTaImeICxk</span><br></pre></td></tr></table></figure>
-
-<p>输出2</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="思路-6"><a href="#思路-6" class="headerlink" title="思路"></a>思路</h3><p>话说虽然是C语言课堂练习，但是这里优雅的写法是<code>while((c = getchar()) != EOF)</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/17/%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%96%B0%E5%AE%9E%E8%B7%B5%E5%9F%BA%E5%9C%B02022%E5%B9%B4%E5%86%AC%E5%AD%A3%E6%A0%A1%E8%B5%9B%EF%BC%88NPU-ACM-Winter-Contest/" data-id="clbrdojdq00006cw07w9jfq4q" data-title="大学生程序设计创新实践基地2022年冬季校赛（NPU-ACM-Winter-Contest" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-about-me" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/10/about-me/" class="article-date">
-  <time class="dt-published" datetime="2022-12-10T09:17:20.000Z" itemprop="datePublished">2022-12-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/10/about-me/">about_me</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>csdn：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/xjsc01</span><br></pre></td></tr></table></figure>
-
-<p>cnblogs:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.cnblogs.com/xjsc01/</span><br></pre></td></tr></table></figure>
-
-<p>知乎</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.zhihu.com/people/xjsc01</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/10/about-me/" data-id="clbhq94yl0000msw0end8em4q" data-title="about_me" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/10/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-12-10T08:34:50.320Z" itemprop="datePublished">2022-12-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/10/hello-world/" data-id="clbhorlsm00002cw06ijzg5li" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
