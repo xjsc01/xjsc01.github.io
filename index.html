@@ -71,6 +71,203 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Untitled" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/31/Untitled/" class="article-date">
+  <time class="dt-published" datetime="2022-12-31T05:04:00.000Z" itemprop="datePublished">2022-12-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/codeforces/">codeforces</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/31/Untitled/">Codeforces Round #841 (Div. 2) and Divide by Zero 2022（A-D）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="Codeforces-Round-841-Div-2-and-Divide-by-Zero-2022（A-D）"><a href="#Codeforces-Round-841-Div-2-and-Divide-by-Zero-2022（A-D）" class="headerlink" title="Codeforces Round #841 (Div. 2) and Divide by Zero 2022（A-D）"></a>Codeforces Round #841 (Div. 2) and Divide by Zero 2022（A-D）</h1><table>
+<thead>
+<tr>
+<th>题目</th>
+<th>链接</th>
+<th>限制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/A">A</a></td>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/A">Joey Takes Money</a></td>
+<td>standard input&#x2F;output1 s, 256 MB</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/B">B</a></td>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/B">Kill Demodogs</a></td>
+<td>standard input&#x2F;output1 s, 256 MB</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/C">C</a></td>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/C">Even Subarrays</a></td>
+<td>standard input&#x2F;output2.5 s, 256 MB</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/D">D</a></td>
+<td><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/D">Valiant’s New Map</a></td>
+<td>standard input&#x2F;output2 s, 256 MB</td>
+</tr>
+</tbody></table>
+<h1 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h1><p>题目有一点点不友好，对于D，竟然….</p>
+<p>但是总的难度还行</p>
+<p><img src="https://s2.loli.net/2022/12/31/S3nxk2TdC6AUiLw.png"></p>
+<h1 id="补题"><a href="#补题" class="headerlink" title="补题"></a>补题</h1><h2 id="A-Joey-Takes-Money"><a href="#A-Joey-Takes-Money" class="headerlink" title="A Joey Takes Money"></a>A <a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/A">Joey Takes Money</a></h2><p><img src="https://s2.loli.net/2022/12/31/yZHmoX7Ld1i4pw9.png" alt="image">​</p>
+<p><img src="https://s2.loli.net/2022/12/31/PZbjKfzJDF7ie9n.png" alt="202212311249854.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/cELr5XBtj7zAluJ.png" alt="202212311249855.png"></p>
+<p><strong>input</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">1000000</span> <span class="number">1000000</span> <span class="number">1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>output</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">28308</span></span><br><span class="line"><span class="number">8088</span></span><br><span class="line"><span class="number">2022000000004044</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h3><p>给定一个数组，有下列操作</p>
+<ul>
+<li>选择两个数字 i 和 j (1≤i&lt;j≤n)</li>
+<li>选择两个整数 x 以及 y，使得x⋅y&#x3D;ai⋅aj</li>
+<li>然后使用x替换ai，使用y替换aj</li>
+</ul>
+<p>可以使用任意数目的以上操作，使得所有的数字加起来最大。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>根据样例，可以猜想，最后把n-1个元素变为1，然后相加起来是最大的。</p>
+<p><strong>（贪心）证明：</strong></p>
+<p>假设有两个数字不是1，那么他们的值<strong>一定大于1</strong>，设两个数字为a, b</p>
+<p>然后我：<code>a --&gt; a*b, b --&gt; 1</code>比较变化之前以及变化之后的数字大小：</p>
+<p>$$<br>a+b-(a\times b  - 1) &#x3D; (a-1)(1-b)<br>$$</p>
+<p>很小于1</p>
+<p>所以变化之后更大。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 55</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line">ll a[N];</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>, a+i);</span><br><span class="line">        ll ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) ans *= a[i];</span><br><span class="line">        ans += n - <span class="number">1</span>;</span><br><span class="line">        ans *= <span class="number">2022</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="B-Kill-Demodogs"><a href="#B-Kill-Demodogs" class="headerlink" title="B Kill Demodogs"></a>B <a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/B">Kill Demodogs</a></h2><p><img src="https://s2.loli.net/2022/12/31/678QEiJNHveYZdf.png" alt="202212311249856.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/F6Z7lkRTepAKhnB.png" alt="202212311249858.png"></p>
+<p><strong>input</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">50</span></span><br><span class="line"><span class="number">1000000000</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>output</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">14154</span></span><br><span class="line"><span class="number">44484</span></span><br><span class="line"><span class="number">171010650</span></span><br><span class="line"><span class="number">999589541</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="题目大意-1"><a href="#题目大意-1" class="headerlink" title="题目大意"></a>题目大意</h3><p>给定一个 $n\times n$ 的矩阵，主角开始在$（1，1）$处，目的地在$(n, n)$处。</p>
+<p>在每一个单元格上都有怪兽，在第 i 个单元格上的怪兽数量是 $i\times j$.</p>
+<p>主角只能向下或者是向右移动。</p>
+<p>问：主角最多杀死多少个怪兽。</p>
+<p>在这一道题目中，矩阵显然关于斜对角线具有对称性，所以我们选择右上角的观察</p>
+<p><img src="https://s2.loli.net/2022/12/31/mtDyOMbFfQlJ7TV.png" alt="202212311249859.png"></p>
+<p>先凭借知觉，我们观察到，好像中间的数字比较大，所以我们尽可能沿着中间的路走</p>
+<p>所以猜想路线：右-下-右-下….</p>
+<p><strong>（贪心）证明：</strong></p>
+<p>由于每一个格子上的怪兽数目是 $i\times j$  </p>
+<p>现在我们假设最优解不是我们设想的路径。</p>
+<p><img src="https://s2.loli.net/2022/12/31/HQFU2lpLMV9GOZX.png" alt="202212311249860.png"></p>
+<p>现在到达（i+1, j+1）有两种路径。</p>
+<p>比较通过蓝色路径以及通过红色路径的大小</p>
+<p>蓝色路径：$i(j+1)$  </p>
+<p>红色路径：$(i+1)j$  </p>
+<p>作差：$i(j+1) - (i+1)j &#x3D; i - j$  </p>
+<p>现在假如 j 大于 i ，那么我们就应该走红色路径。</p>
+<p>就这样，对于不是最优解的情况，我们可以使用这一种方法不断变成我们的假设。所以我们的假设就是最优解。</p>
+<p>然后计算的话就是</p>
+<p>$$<br>maxv &#x3D; \sum_{i&#x3D;1}^{n}i^2 + \sum_{n&#x3D;1}^{n-1}i(i+1) &#x3D;  \sum_{i&#x3D;1}^{n}i^2 + \sum_{i&#x3D;1}^{n-1}i^2+\sum_{i&#x3D;1}^{n-1}i<br>$$</p>
+<p>由于n最大是$10^9$，所以应该使用公式计算</p>
+<p>补充相关的数学公式</p>
+<p><img src="https://s2.loli.net/2022/12/31/1CkRgSQhFOpua9o.png" alt="202212311249861.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/8y32BA7vXWoZDMS.png" alt="202212311249862.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tim = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> T <span class="keyword">in</span> <span class="built_in">range</span>(tim):</span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    ans = <span class="number">0</span></span><br><span class="line">    ans += n*(n+<span class="number">1</span>)*(<span class="number">2</span>*n+<span class="number">1</span>)//<span class="number">6</span></span><br><span class="line">    ans += (n-<span class="number">1</span>)*n*(<span class="number">2</span>*n-<span class="number">1</span>)//<span class="number">6</span></span><br><span class="line">    ans += n*(n-<span class="number">1</span>)//<span class="number">2</span></span><br><span class="line">    ans = ans*<span class="number">2022</span>%<span class="number">1000000007</span></span><br><span class="line">    <span class="built_in">print</span>(ans)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>其实除法取模（除法逆元）也很简单</p>
+<p>前提：</p>
+<ol>
+<li>确保取模的哪一个数字是质数</li>
+<li>确保可以整除</li>
+</ol>
+<p>所以有 $a&#x2F;b &#x3D; a*b^{mod-2} %mod$  </p>
+<h2 id="C-Even-Subarrays"><a href="#C-Even-Subarrays" class="headerlink" title="C Even Subarrays"></a>C <a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/C">Even Subarrays</a></h2><p><img src="https://s2.loli.net/2022/12/31/42Oy9VGxEIC3lpN.png" alt="image.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/ZYe61OwphusWqxV.png" alt="image.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/LWmht9QCOyaANIH.png" alt="image.png"></p>
+<p><strong>input</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">4</span> <span class="number">2</span> <span class="number">1</span> <span class="number">5</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">4</span> <span class="number">4</span> <span class="number">4</span> <span class="number">4</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">5</span> <span class="number">7</span> <span class="number">3</span> <span class="number">7</span> <span class="number">1</span> <span class="number">7</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>output</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">11</span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><blockquote>
+<p>这一道题目着实很妙。</p>
+</blockquote>
+<p>首先：因数个数是奇数个的数字是非完全平方数。</p>
+<p>但是非完全平方数比较多，我们考虑反方面：完全平方数！</p>
+<p>首先，要是真的来枚举这一个区间，是不可行的。</p>
+<p>对于一个区间来想，可能不是太清晰，所以可以利用前缀和思想，把区间问题转化为端点问题。</p>
+<p><code>sum[L-1] XOR sum[R] == a[L] OXR .....XOR a[R]</code></p>
+<p>然后我们可以枚举R，当务之急就是找到在R之前有多少个前缀与<code>sum[R]</code>异或之后的值是非完全平方数（枚举一遍非完全平方数）。</p>
+<p>我们开一个数组<code>cnt[x]</code>记录在R之前的所有前缀中值为x的个数。</p>
+<p>然后就可以O(1)求出个数。</p>
+<p>总体时间复杂度为<code>O(n*sqrt(2n))</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"><span class="comment">#define int long long</span></span><br><span class="line"><span class="comment">#define N 200200</span></span><br><span class="line"><span class="built_in">int</span> a[N];</span><br><span class="line"><span class="built_in">int</span> <span class="built_in">sum</span>[N];// a的前缀数组</span><br><span class="line"><span class="built_in">int</span> cnt[N*<span class="number">2</span>];// 两个小于n的数进行异或，值最大不超过2N</span><br><span class="line">signed main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> T;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">int</span> n;</span><br><span class="line">        scanf(<span class="string">&quot;%lld&quot;</span>, &amp;n);</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i ++)&#123;</span><br><span class="line">            scanf(<span class="string">&quot;%lld&quot;</span>, a+i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">int</span> ans = <span class="number">0</span>;// 答案的反面</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">            <span class="built_in">sum</span>[i] = <span class="built_in">sum</span>[i-<span class="number">1</span>] ^ a[i];</span><br><span class="line">      </span><br><span class="line">        &#125;</span><br><span class="line">        cnt[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        // 这是因为如果<span class="built_in">sum</span>[R] == 完全平方数，那么其实选择从<span class="number">1</span>到R就可以，所以cnt[<span class="number">0</span>]应该为<span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="built_in">int</span> x = <span class="number">0</span>; x * x &lt;= <span class="number">2</span>*n; x++)&#123;</span><br><span class="line">                <span class="built_in">int</span> t = (x*x) ^ <span class="built_in">sum</span>[i];</span><br><span class="line">                <span class="keyword">if</span>(t &gt; <span class="number">2</span> * n) <span class="keyword">continue</span>;//因为x * x &lt;= <span class="number">2</span>*n,所以可能整出来大于2n的</span><br><span class="line">                ans += cnt[t];</span><br><span class="line">            &#125;</span><br><span class="line">            cnt[<span class="built_in">sum</span>[i]] ++;</span><br><span class="line">        &#125;</span><br><span class="line">      </span><br><span class="line">        printf(<span class="string">&quot;%lld\n&quot;</span>, (long long)n * (n+<span class="number">1</span>)/<span class="number">2</span> - ans);</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>; i &lt;= n; i++) &#123;</span><br><span class="line">            <span class="built_in">sum</span>[i] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>; i &lt;= n * <span class="number">2</span>; i++)&#123;</span><br><span class="line">            cnt[i] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="D-Valiant’s-New-Map"><a href="#D-Valiant’s-New-Map" class="headerlink" title="D Valiant’s New Map"></a>D <a target="_blank" rel="noopener" href="https://codeforces.com/contest/1731/problem/D">Valiant’s New Map</a></h2><p><img src="https://s2.loli.net/2022/12/31/dRnHaLXoQpBgkIT.png" alt="image.png"></p>
+<p><img src="https://s2.loli.net/2022/12/31/JvWdVXtAqGbYmID.png" alt="image.png"></p>
+<p><strong>input</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">2</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">5</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">5</span> <span class="number">6</span></span><br><span class="line"><span class="number">1</span> <span class="number">9</span> <span class="number">4</span> <span class="number">6</span> <span class="number">5</span> <span class="number">8</span></span><br><span class="line"><span class="number">10</span> <span class="number">9</span> <span class="number">5</span> <span class="number">8</span> <span class="number">11</span> <span class="number">6</span></span><br><span class="line"><span class="number">24</span> <span class="number">42</span> <span class="number">32</span> <span class="number">8</span> <span class="number">11</span> <span class="number">1</span></span><br><span class="line"><span class="number">23</span> <span class="number">1</span> <span class="number">9</span> <span class="number">69</span> <span class="number">13</span> <span class="number">3</span></span><br><span class="line"><span class="number">13</span> <span class="number">22</span> <span class="number">60</span> <span class="number">12</span> <span class="number">14</span> <span class="number">17</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>output</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="题目大意-2"><a href="#题目大意-2" class="headerlink" title="题目大意"></a>题目大意</h3><p>给定一个$n\times m$的矩阵，求一个最大值l，使得在矩阵中存在有 $l\times l$ 的方格中的最小值大于等于 l</p>
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p><strong>首先容易证明具有单调性:</strong></p>
+<p>如果可以找到使得在矩阵中存在有 $l\times l$ 的方格中的最小值大于等于 l，那么我就在这片区域中一定能找到 $m\times m$ 的方格中的最小值大于等于 m ($m\le l$)</p>
+<p>然后问题就成了这样：给定一个框的大小，求有没有一种框法，使得框柱的数字的最小值是给定值。</p>
+<p>如果暴力显然时间不够用，但是最小值又不能合起来表示（以一部分的最小值表示）。</p>
+<p>但是这里我们的给定值是一个固定的值，所以我们并没有必要知道某一个区域中的最小值是多少，而是仅仅需要知道这一个区域的最小值是不是小于给定值就可以了。</p>
+<p>所以我建立一个二维前缀和，如果大于等于给定值，那么我们假想值为0，否则值为1</p>
+<p>然后查询前缀和中的值是不是0就可以判断这一种框法是否可行。</p>
+<p><strong>但是</strong></p>
+<p>这一道题目恶心在数组必须动态开</p>
+<p>为此有两种方法：</p>
+<ul>
+<li>动态内存分配（额…）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> **a = (<span class="built_in">int</span> **)calloc(n, sizeof(<span class="built_in">int</span>*));</span><br><span class="line"><span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; n; i++) a[i] = (<span class="built_in">int</span> *)calloc(m, sizeof(<span class="built_in">int</span>));</span><br></pre></td></tr></table></figure>
+
+<p>别忘了之后还要free!!</p>
+<p>注意：开辟后自动有初始值0</p>
+<ul>
+<li>使用vector来实现</li>
+</ul>
+<p>resize会分配空间，并且自动初始化为0</p>
+<p>也可以resize(大小， 初始值)</p>
+<p>shrink_to_fit()可以让已经分配的内存空间缩小到size的大小</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"><span class="built_in">int</span> n, m;</span><br><span class="line"><span class="comment">#define N 1100000</span></span><br><span class="line"><span class="built_in">bool</span> ck(<span class="built_in">int</span> mid, <span class="built_in">int</span> **a, <span class="built_in">int</span> ** f)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> j = <span class="number">1</span>; j &lt;= m; j++)&#123;</span><br><span class="line">            f[i][j] = f[i-<span class="number">1</span>][j] + f[i][j-<span class="number">1</span>] - f[i-<span class="number">1</span>][j-<span class="number">1</span>] + (a[i][j] &lt; mid);</span><br><span class="line">            // printf(<span class="string">&quot;%d &quot;</span>, f[i][j]);</span><br><span class="line">        &#125;</span><br><span class="line">        // puts(<span class="string">&quot;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="built_in">int</span> i = mid; i &lt;= n; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> j = mid; j &lt;= m; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(f[i][j] - f[i - mid][j] - f[i][j - mid] + f[i-mid][j-mid] == <span class="number">0</span>) <span class="keyword">return</span> true;</span><br><span class="line">        &#125;</span><br><span class="line">  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> false;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> T;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span>(T--)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(<span class="string">&quot;%d%d&quot;</span>, &amp;n, &amp;m);</span><br><span class="line">        //<span class="built_in">int</span> *a[m + <span class="number">1</span>] = (<span class="built_in">int</span> *[m+<span class="number">1</span>])calloc((n+<span class="number">1</span>)*(m+<span class="number">1</span>), sizeof(<span class="built_in">int</span>));<span class="built_in">int</span>** p = (<span class="built_in">int</span> **)malloc(<span class="number">3</span>*sizeof(<span class="built_in">int</span>*));//申请指针数组</span><br><span class="line"> </span><br><span class="line">        <span class="built_in">int</span>** a = (<span class="built_in">int</span> **)malloc((n+<span class="number">1</span>)*sizeof(<span class="built_in">int</span>*));</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>; i&lt;n+<span class="number">1</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            a[i] = (<span class="built_in">int</span>*)malloc((m+<span class="number">1</span>)*sizeof(<span class="built_in">int</span>));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    	<span class="built_in">int</span>** f = (<span class="built_in">int</span> **)malloc((n+<span class="number">1</span>)*sizeof(<span class="built_in">int</span>*));</span><br><span class="line">  </span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>; i&lt;n+<span class="number">1</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            f[i] = (<span class="built_in">int</span>*)malloc((m+<span class="number">1</span>)*sizeof(<span class="built_in">int</span>));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="built_in">int</span> j = <span class="number">1</span>; j &lt;= m; j++)</span><br><span class="line">            &#123;</span><br><span class="line">                scanf(<span class="string">&quot;%d&quot;</span>, &amp;a[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">int</span> l = <span class="number">1</span>, r = <span class="built_in">min</span>(n, m);</span><br><span class="line">        <span class="keyword">while</span>(l &lt; r)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">int</span> mid = (l + r + <span class="number">1</span>) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(ck(mid, a, f)) l = mid;</span><br><span class="line">            <span class="keyword">else</span> r = mid - <span class="number">1</span>;</span><br><span class="line">        &#125;  </span><br><span class="line">        printf(<span class="string">&quot;%d\n&quot;</span>, l);</span><br><span class="line">       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>; i&lt;n+<span class="number">1</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            free(f[i]);</span><br><span class="line">            free(a[i]);</span><br><span class="line">        &#125; </span><br><span class="line">        free(a);</span><br><span class="line">        free(f);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/31/Untitled/" data-id="clcbhbktv0000g8w05fai5j8w" data-title="Codeforces Round #841 (Div. 2) and Divide by Zero 2022（A-D）" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-升子序列" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/19/%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" class="article-date">
@@ -321,6 +518,10 @@
   <time class="dt-published" datetime="2022-12-17T03:24:00.000Z" itemprop="datePublished">2022-12-17</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/codeforces/">codeforces</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -561,8 +762,6 @@
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li></ul>
-
     </footer>
   </div>
   
@@ -679,7 +878,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AcWing%E7%AE%97%E6%B3%95%E6%8F%90%E9%AB%98%E8%AF%BE/">AcWing算法提高课</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AcWing%E7%AE%97%E6%B3%95%E6%8F%90%E9%AB%98%E8%AF%BE/">AcWing算法提高课</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/codeforces/">codeforces</a></li></ul>
     </div>
   </div>
 
@@ -689,7 +888,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/codeforces/" rel="tag">codeforces</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a></li></ul>
     </div>
   </div>
 
@@ -699,7 +898,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/codeforces/" style="font-size: 10px;">codeforces</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 10px;">动态规划</a>
+      <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 10px;">动态规划</a>
     </div>
   </div>
 
@@ -719,6 +918,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/12/31/Untitled/">Codeforces Round #841 (Div. 2) and Divide by Zero 2022（A-D）</a>
+          </li>
         
           <li>
             <a href="/2022/12/19/%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/">简单DP+最长上升子序列</a>
